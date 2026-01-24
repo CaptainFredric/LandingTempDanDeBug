@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-label="Laptop illustration">
+  <defs>
+    <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="190" y="90" width="540" height="360" rx="32" fill="url(#scr)" stroke="#0f172a" stroke-opacity="0.10"/>
+  <rect x="230" y="140" width="220" height="26" rx="13" fill="#6366f1" fill-opacity="0.18"/>
+  <rect x="230" y="178" width="420" height="14" rx="7" fill="#0f172a" fill-opacity="0.08"/>
+  <rect x="230" y="202" width="380" height="14" rx="7" fill="#0f172a" fill-opacity="0.08"/>
+  <rect x="230" y="240" width="220" height="110" rx="22" fill="#ffffff" fill-opacity="0.72" stroke="#0f172a" stroke-opacity="0.08"/>
+  <rect x="470" y="240" width="220" height="110" rx="22" fill="#ffffff" fill-opacity="0.72" stroke="#0f172a" stroke-opacity="0.08"/>
+
+  <path d="M140 470h640l-48 80H188l-48-80z" fill="#0f172a" fill-opacity="0.06" stroke="#0f172a" stroke-opacity="0.10"/>
+  <rect x="392" y="490" width="136" height="18" rx="9" fill="#6366f1" fill-opacity="0.18"/>
+
+  <g opacity="0.35">
+    <circle cx="160" cy="140" r="14" fill="#6366f1"/>
+    <circle cx="770" cy="420" r="18" fill="#6366f1"/>
+  </g>
+</svg>

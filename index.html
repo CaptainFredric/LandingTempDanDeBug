@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dan DeBugger — Landing Page Template</title>
+  <meta name="description" content="A responsive, accessible landing page template by Dan DeBugger (Aden Cisneros)." />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <div class="container nav__inner">
+        <a class="brand" href="#top" aria-label="Dan DeBugger home">
+          <span class="brand__mark" aria-hidden="true">DB</span>
+          <span class="brand__name">Dan DeBugger</span>
+        </a>
+
+        <div class="nav__desktop" aria-label="Primary links">
+          <a class="nav__link" href="#features">Features</a>
+          <a class="nav__link" href="#work">Work</a>
+          <a class="nav__link" href="#steps">Steps</a>
+          <a class="nav__link" href="#values">Values</a>
+          <a class="nav__link" href="#pricing">Pricing</a>
+          <a class="nav__link" href="#testimonials">Testimonials</a>
+          <a class="btn btn--primary" href="#contact">Contact</a>
+        </div>
+
+        <button
+          class="nav__menu-btn"
+          type="button"
+          id="menuBtn"
+          aria-haspopup="dialog"
+          aria-controls="menuDialog"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="menu" id="menuDialog" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+      <div class="menu__backdrop" data-menu-close></div>
+      <div class="menu__panel">
+        <div class="menu__top">
+          <div class="brand brand--menu">
+            <span class="brand__mark" aria-hidden="true">DB</span>
+            <span class="brand__name">Dan DeBugger</span>
+          </div>
+
+          <button class="menu__close" type="button" data-menu-close>
+            <span class="sr-only">Close menu</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu__links">
+          <a class="menu__link" href="#features">Features</a>
+          <a class="menu__link" href="#work">Work</a>
+          <a class="menu__link" href="#steps">Steps</a>
+          <a class="menu__link" href="#values">Values</a>
+          <a class="menu__link" href="#pricing">Pricing</a>
+          <a class="menu__link" href="#testimonials">Testimonials</a>
+          <a class="menu__link menu__link--primary" href="#contact">Contact</a>
+        </div>
+
+        <p class="menu__note muted">
+          Dan DeBugger is my coder name. Aden Cisneros is my real name. Not a bug, it’s a feature.
+        </p>
+      </div>
+    </div>
+
+    <section class="hero" aria-label="Hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="kicker">DanDebugger Template</p>
+          <h1 class="hero__title">Beautiful UI Templates <span class="accent">for you.</span></h1>
+          <p class="hero__subtitle">Clean sections, predictable spacing, and accessible interactions. Customize it fast and ship it anywhere static.</p>
+
+          <form class="hero__form" id="signup" aria-label="Email signup">
+            <label class="sr-only" for="email">Email</label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+            />
+            <button class="btn btn--primary" type="submit">Get Started</button>
+          </form>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+
+          <div class="hero__actions" aria-label="Hero actions">
+            <a class="btn btn--secondary" href="#contact">Contact Us</a>
+          </div>
+
+          <div class="hero__trusted" aria-label="Trusted by">
+            <span class="hero__trusted-label">Trusted by:</span>
+            <div class="logos" aria-hidden="true">
+              <span class="logo-pill">PORTFOLIO</span>
+              <span class="logo-pill">PROJECT</span>
+              <span class="logo-pill">PAGES</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__art">
+          <img class="illus" src="assets/hero-illustration.svg" alt="Illustration of people building a website" />
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main">
+    <section class="section section--tint" id="features" aria-label="Features">
+      <div class="container">
+        <header class="section__header">
+          <p class="kicker">Features</p>
+          <h2 class="section__title">We have <span class="accent">amazing</span> service.</h2>
+          <p class="section__subtitle">A small set of sections that stays readable, responsive, and easy to tweak.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card reveal reveal--up" style="--d: 0ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 5-3.5 8-8 8s-8-3-8-8V7l8-4z" fill="none" stroke="currentColor" stroke-width="2" /></svg>
+            </div>
+            <h3 class="card__title">Secure by default</h3>
+            <p class="card__text">Safe external links, predictable structure, and no sketchy dependencies.</p>
+          </article>
+
+          <article class="card reveal reveal--up" style="--d: 80ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 12h16M12 4v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+            </div>
+            <h3 class="card__title">Composable sections</h3>
+            <p class="card__text">Drop-in sections that can become a portfolio, product page, or landing page.</p>
+          </article>
+
+          <article class="card reveal reveal--up" style="--d: 160ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M7 12l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </div>
+            <h3 class="card__title">Reliable UI</h3>
+            <p class="card__text">Responsive layout, clear spacing, and motion-safe interactions.</p>
+          </article>
+
+          <article class="card reveal reveal--up" style="--d: 240ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M12 2v6m0 8v6M4.9 4.9l4.2 4.2m5.6 5.6 4.2 4.2M2 12h6m8 0h6M4.9 19.1l4.2-4.2m5.6-5.6 4.2-4.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+            </div>
+            <h3 class="card__title">Fast iteration</h3>
+            <p class="card__text">No build step required. Edit HTML/CSS/JS and refresh.</p>
+          </article>
+
+          <article class="card reveal reveal--up" style="--d: 320ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" /><path d="M8 10h8M8 14h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+            </div>
+            <h3 class="card__title">Readable content</h3>
+            <p class="card__text">Typography and spacing tuned for scanning, not squinting.</p>
+          </article>
+
+          <article class="card reveal reveal--up" style="--d: 400ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M6 19h12M8 17V7a4 4 0 1 1 8 0v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+            </div>
+            <h3 class="card__title">Accessible patterns</h3>
+            <p class="card__text">Skip link, focus styles, and keyboard-friendly navigation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-label="Quality work">
+      <div class="container split">
+        <div class="split__copy reveal reveal--left">
+          <p class="kicker">Quality Work</p>
+          <h2 class="section__title">Designed &amp; developed with <span class="accent">real-world</span> polish.</h2>
+          <p class="section__subtitle">
+            Clean sections, consistent spacing, and UI that holds up on mobile.
+            Customize the copy, swap the assets, and ship.
+          </p>
+          <a class="btn btn--secondary" href="#features">Learn More</a>
+        </div>
+
+        <div class="split__media reveal reveal--right" aria-hidden="true">
+          <div class="mock">
+            <div class="mock__bar">
+              <span class="dot dot--r"></span>
+              <span class="dot dot--y"></span>
+              <span class="dot dot--g"></span>
+            </div>
+            <div class="mock__body">
+              <div class="mock__line w-70"></div>
+              <div class="mock__line w-90"></div>
+              <div class="mock__line w-55"></div>
+              <div class="mock__grid">
+                <div class="mock__tile"></div>
+                <div class="mock__tile"></div>
+                <div class="mock__tile"></div>
+                <div class="mock__tile"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="steps" aria-label="Steps">
+      <div class="container split split--reverse">
+        <div class="split__media reveal reveal--left" aria-hidden="true">
+          <img class="illus" src="assets/laptop-steps.svg" alt="Laptop with UI blocks" />
+        </div>
+
+        <div class="split__copy reveal reveal--right">
+          <p class="kicker">Steps</p>
+          <h2 class="section__title">Easy to get started.</h2>
+
+          <ol class="steps">
+            <li class="steps__item reveal reveal--up" style="--d: 0ms;">
+              <div class="steps__num">01</div>
+              <div>
+                <h3 class="steps__title">Plan</h3>
+                <p class="steps__text">Pick the sections you need. Delete the rest. Keep it simple.</p>
+              </div>
+            </li>
+            <li class="steps__item reveal reveal--up" style="--d: 120ms;">
+              <div class="steps__num">02</div>
+              <div>
+                <h3 class="steps__title">Build</h3>
+                <p class="steps__text">Update copy, links, and cards. Add screenshots later.</p>
+              </div>
+            </li>
+            <li class="steps__item reveal reveal--up" style="--d: 240ms;">
+              <div class="steps__num">03</div>
+              <div>
+                <h3 class="steps__title">Ship</h3>
+                <p class="steps__text">Deploy via GitHub Pages or any static host in minutes.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="values" aria-label="Values">
+      <div class="container split">
+        <div class="split__copy reveal reveal--left">
+          <p class="kicker">Values</p>
+          <h2 class="section__title">Principles I ship by.</h2>
+          <p class="section__subtitle">Solid UX doesn’t need hype — it needs consistency.</p>
+
+          <div class="grid grid--2">
+            <article class="value reveal reveal--up" style="--d: 0ms;">
+              <div class="value__head">
+                <span class="value__badge value__badge--ok" aria-hidden="true"></span>
+                <h3 class="value__title">Accessible by default</h3>
+              </div>
+              <p class="value__text">Keyboard-friendly navigation, clear focus styles, and readable spacing.</p>
+            </article>
+
+            <article class="value reveal reveal--up" style="--d: 120ms;">
+              <div class="value__head">
+                <span class="value__badge value__badge--warn" aria-hidden="true"></span>
+                <h3 class="value__title">Honest demo data</h3>
+              </div>
+              <p class="value__text">If something is a sample, it’s labeled. No fake pricing, no fake stats.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="split__media reveal reveal--right" aria-hidden="true">
+          <img class="illus" src="assets/values-illustration.svg" alt="Illustration of a planning board" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="pricing" aria-label="Pricing">
+      <div class="container">
+        <header class="section__header">
+          <p class="kicker">Pricing</p>
+          <h2 class="section__title">Reasonable &amp; flexible plans.</h2>
+          <p class="section__subtitle">These are example tiers for layout purposes. Customize to your needs.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="price price--teal reveal reveal--up" style="--d: 0ms;">
+            <header class="price__head">
+              <h3 class="price__name">Personal</h3>
+              <p class="price__cost">$0<span class="price__unit">/mo</span></p>
+              <p class="price__desc">For a simple portfolio.</p>
+            </header>
+            <ul class="price__list">
+              <li>One-page layout</li>
+              <li>Responsive sections</li>
+              <li>GitHub Pages ready</li>
+            </ul>
+            <a class="btn btn--price btn--full" href="#contact">Contact</a>
+          </article>
+
+          <article class="price price--featured price--indigo reveal reveal--up" style="--d: 120ms;" aria-label="Featured plan">
+            <header class="price__head">
+              <h3 class="price__name">Pro</h3>
+              <p class="price__cost">$12<span class="price__unit">/mo</span></p>
+              <p class="price__desc">For shipping projects fast.</p>
+            </header>
+            <ul class="price__list">
+              <li>Everything in Personal</li>
+              <li>Case-study sections</li>
+              <li>Priority polish checklist</li>
+            </ul>
+            <a class="btn btn--price btn--full" href="#contact">Contact</a>
+          </article>
+
+          <article class="price price--red reveal reveal--up" style="--d: 240ms;">
+            <header class="price__head">
+              <h3 class="price__name">Studio</h3>
+              <p class="price__cost">$29<span class="price__unit">/mo</span></p>
+              <p class="price__desc">For teams and experiments.</p>
+            </header>
+            <ul class="price__list">
+              <li>Everything in Pro</li>
+              <li>Multi-page structure</li>
+              <li>Content templates</li>
+            </ul>
+            <a class="btn btn--price btn--full" href="#contact">Contact</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="testimonials" aria-label="Testimonials">
+      <div class="container split">
+        <div class="split__copy reveal reveal--left">
+          <p class="kicker">Testimonials</p>
+          <h2 class="section__title">Clients love clean, readable UI.</h2>
+          <p class="section__subtitle">Three extremely serious reviews from totally real human beings.</p>
+
+          <div class="quotes" aria-label="Testimonials list">
+            <article class="quote reveal reveal--up" style="--d: 0ms;" aria-label="Testimonial: Dan the Fan">
+              <div class="quote__rating" aria-label="5 out of 5 stars">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <span class="quote__score">5.0</span>
+              </div>
+              <p class="quote__text">
+                “I clicked the buttons. They buttoned. I scrolled the page. It paged.
+                Honestly impressive. I’d give ten stars if the UI let me.”
+              </p>
+              <div class="quote__who">
+                <img class="avatar-img" src="assets/dan-the-fan.svg" alt="" />
+                <div>
+                  <div class="quote__name">Dan the Fan</div>
+                  <div class="quote__role muted">Chief Enthusiasm Officer</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="quote reveal reveal--up" style="--d: 120ms;" aria-label="Testimonial: Dan the Man">
+              <div class="quote__rating" aria-label="4 out of 5 stars">
+                <span class="stars" aria-hidden="true">★★★★☆</span>
+                <span class="quote__score">4.0</span>
+              </div>
+              <p class="quote__text">
+                “Clean layout, crisp spacing, and the menu behaves.
+                Would recommend. One star deducted because I ran out of coffee.”
+              </p>
+              <div class="quote__who">
+                <img class="avatar-img" src="assets/dan-the-man.svg" alt="" />
+                <div>
+                  <div class="quote__name">Dan the Man</div>
+                  <div class="quote__role muted">UI Appreciator</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="quote reveal reveal--up" style="--d: 240ms;" aria-label="Testimonial: Dan the Stan">
+              <div class="quote__rating" aria-label="5 out of 5 stars">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <span class="quote__score">5.0</span>
+              </div>
+              <p class="quote__text">
+                “I’m not saying this template solved all my problems.
+                I am saying this solved 99% of them. Five stars.”
+              </p>
+              <div class="quote__who">
+                <img class="avatar-img" src="assets/dan-the-stan.svg" alt="" />
+                <div>
+                  <div class="quote__name">Dan the Stan</div>
+                  <div class="quote__role muted">Professional Hype Person</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="split__media reveal reveal--right" aria-hidden="true">
+          <div class="testimonial-mock">
+            <div class="testimonial-mock__bar">
+              <span class="dot dot--r"></span>
+              <span class="dot dot--y"></span>
+              <span class="dot dot--g"></span>
+            </div>
+            <div class="testimonial-mock__body">
+              <div class="mock__line w-90"></div>
+              <div class="mock__line w-70"></div>
+              <div class="mock__line w-55"></div>
+              <div class="mock__grid">
+                <div class="mock__tile"></div>
+                <div class="mock__tile"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact" aria-label="Call to action">
+      <div class="container cta__inner reveal reveal--up">
+        <h2 class="cta__title">A tidy landing page that doesn’t fight you.</h2>
+        <div class="cta__actions">
+          <a class="btn btn--ghost" href="#pricing">View pricing</a>
+          <a class="btn btn--light" href="mailto:captainarmoreddude@gmail.com" target="_blank" rel="noopener">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer__inner reveal reveal--up">
+      <div class="footer__brand">
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">DB</span>
+          <span class="brand__name">Dan DeBugger</span>
+        </div>
+        <p class="footer__note">
+          Built with semantic HTML, modern CSS, and vanilla JS. Static-host friendly.
+        </p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <div class="footer__head">Main</div>
+          <a class="footer__link" href="#features">Features</a>
+          <a class="footer__link" href="#work">About</a>
+          <a class="footer__link" href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__head">Product</div>
+          <a class="footer__link" href="#pricing">Pricing</a>
+          <a class="footer__link" href="#testimonials">Testimonials</a>
+          <a class="footer__link" href="#steps">How it works</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__head">Projects</div>
+          <a class="footer__link" href="https://github.com/CaptainFredric/Bookstore" target="_blank" rel="noopener">Bookstore</a>
+          <a class="footer__link" href="https://github.com/CaptainFredric/Dan-DeBugger-s-First-Project" target="_blank" rel="noopener">Portfolio repo</a>
+          <a class="footer__link" href="https://github.com/CaptainFredric/FES-Folder-1" target="_blank" rel="noopener">FES folder</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__head">Team</div>
+          <a class="footer__link" href="#work">Quality work</a>
+          <a class="footer__link" href="#values">Values</a>
+          <a class="footer__link" href="#top">Home</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__head">Social</div>
+          <a class="footer__link" href="https://github.com/CaptainFredric" target="_blank" rel="noopener">GitHub</a>
+          <a class="footer__link" href="https://www.linkedin.com/in/aden-cisneros/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="footer__link" href="mailto:captainarmoreddude@gmail.com" target="_blank" rel="noopener">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom reveal reveal--up">
+      <p class="footer__copyright">© 2026 Aden Cisneros (Dan DeBugger).</p>
+    </div>
+  </footer>
+</body>
+</html>

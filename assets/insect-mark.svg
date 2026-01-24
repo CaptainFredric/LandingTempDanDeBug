@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" role="img" aria-label="DanDebugger mark">
+  <rect width="512" height="512" fill="#ffffff"/>
+
+  <!-- cyan side accents -->
+  <g fill="#00D7D2">
+    <rect x="92" y="118" width="26" height="150" rx="8"/>
+    <rect x="394" y="118" width="26" height="150" rx="8"/>
+    <rect x="82" y="282" width="36" height="22" rx="6"/>
+    <rect x="82" y="320" width="36" height="22" rx="6"/>
+    <rect x="394" y="282" width="36" height="22" rx="6"/>
+    <rect x="394" y="320" width="36" height="22" rx="6"/>
+  </g>
+
+  <!-- shield base -->
+  <path d="M154 138h204l46 60v116c0 104-70 168-148 194l-2 1-2-1c-78-26-148-90-148-194V198l46-60z" fill="#0B1E34"/>
+
+  <!-- top notch -->
+  <path d="M232 162h48c-2 20-14 36-24 42-10-6-22-22-24-42z" fill="#ffffff" opacity="0.95"/>
+
+  <!-- inner panels background -->
+  <path d="M176 220h160v170l-80 68-80-68V220z" fill="#0A1526" opacity="0.40"/>
+
+  <!-- left panel with D cutout -->
+  <path d="M176 220h160v170l-80 68-80-68V220z" fill="#0B1E34"/>
+  <path d="M192 246h116v20H192z" fill="#ffffff"/>
+  <path d="M210 268h66c28 0 48 20 48 48v0c0 28-20 48-48 48h-66V268z" fill="#ffffff"/>
+  <path d="M232 292h34c12 0 22 10 22 22v0c0 12-10 22-22 22h-34V292z" fill="#0B1E34"/>
+
+  <!-- center divider -->
+  <path d="M252 220h8v260l-4 3-4-3V220z" fill="#ffffff" opacity="0.9"/>
+
+  <!-- right panel with B cutout -->
+  <path d="M268 268h58c26 0 44 14 44 36 0 14-8 26-20 31 14 6 24 18 24 34 0 24-20 40-50 40h-56V268z" fill="#ffffff"/>
+  <path d="M292 292h20c10 0 18 6 18 14s-8 14-18 14h-20v-28z" fill="#0B1E34"/>
+  <path d="M292 350h22c12 0 20 7 20 16s-8 16-20 16h-22v-32z" fill="#0B1E34"/>
+
+  <!-- subtle highlight outline -->
+  <path d="M154 138h204l46 60v116c0 104-70 168-148 194l-2 1-2-1c-78-26-148-90-148-194V198l46-60z" fill="none" stroke="#0B1E34" stroke-width="10" opacity="0.25"/>
+</svg>
